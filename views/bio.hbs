@@ -1,4 +1,55 @@
-<h1>welcome to{{bioData.name}}'s bio page!</h1>
+{{!-- <h1>welcome to{{bioData.name}}'s bio page!</h1>
 <img src="/images/{{bioData.avatar}}" alt="bio image">
 <h3>About {{bioData.name}}</h3>
 <p>{{bioData.bio}}</p>
+<video width="320" height="240" controls>
+  <source src="/images/{{bioData.video}}" type="video/mp4">
+
+
+</video> --}}
+
+        <!-- End Header Section -->
+        
+        
+        <!-- Start About Us Section -->
+    <section id="about-section" class="about-section">
+        
+ <div class="page-header">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="p-3">{{bioData.name}} </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+               <div class="col-md-5">
+                   <div class="about-img">
+                       <img id="img-5" class="img-fluid" src="/images/{{bioData.avatar}}" alt="bio image">
+             
+                   </div>
+               </div>
+               <div class="col-md-7">
+                   <div class="about-text">
+                       <p class="p-4">{{bioData.bio}} <br> <br> People who like aroung the world: {{bioData.number}}</p>
+                   
+                   </div>
+                   
+    
+                   
+               </div>
+                
+                
+                
+            </div>
+          <div id="video" align="center" class="embed-responsive embed-responsive-16by9">
+    <video id="video-1" controls class="embed-responsive-item">
+        <source src="/images/{{bioData.video}}" type="video/mp4">
+    </video>
+</div>
+        </div>
+    </section>
