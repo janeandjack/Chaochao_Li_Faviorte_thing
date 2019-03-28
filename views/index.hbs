@@ -1,11 +1,33 @@
+<h3 class="p-1">{{title}}</h3>
 <section id="heroes">
     {{#each avatars}}
-     <div class="hero-container">
+     {{!-- <div class="hero-container" id="hovereffect">
          <a href="/{{name}}">
-         <img src="/images/{{avatar}}" alt="avatear">
+         
+         <img class="img-1" src="/images/{{avatar}}" alt="avatear">
          </a>
     <h3 class="hero-name">{{name}}</h3>
+ <div class="d-flex justify-content-between align-items-center" id="overlay">
+                <div class="btn-group">
+              
+                  <button class="b-1" style="margin-left:130px;" type="button" >Read More</button>
+                </div>
+     
+              </div>
+     </div> --}}
 
-     </div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" id="hero-container">
+    <div class="hovereffect" >
+        <img class="img-1" class="img-responsive" src="/images/{{avatar}}" alt="">
+        <div class="overlay">
+           <h2>{{name}}</h2>
+       
+           <a class="info" href="/{{name}}">Read More</a>
+        </div>
+    </div>
+</div>
+
+
      {{/each}}
+    
 </section>

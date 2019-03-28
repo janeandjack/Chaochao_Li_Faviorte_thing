@@ -1,0 +1,50 @@
+.about-section
+  {
+    background: url(/images/escheresque_ste.png);
+    width: 60%;
+    margin: 0 auto;
+    height: 1250px;
+    opacity: .9;
+    box-shadow:0 0 6px 6px black;
+  }
+  
+  .p-1
+  {
+    color: $p-color;
+    text-align: center;
+    margin-top: 3%;
+  }
+  .p-2
+  {
+    color: $p-color;
+    margin-left: -2%;
+  }
+  .p-3
+  {
+    font-size: 35px;
+    color: $text-color;
+    letter-spacing: 1px;
+  }
+  .p-4
+  {
+    
+    font-size: 15.9px;
+    color: #dedede;
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 50px;
+    margin-top: 20px;
+  }
+  .text-1
+  {
+    color: $p-color;
+  }
+  #img-5
+  {
+    margin-top: 20px;
+    box-shadow: 6px 6px #000000;
+    margin-left: 20px;
+  }
+  #video
+  {
+      margin-top: 20px;
+  }

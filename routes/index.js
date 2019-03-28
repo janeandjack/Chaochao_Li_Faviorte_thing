@@ -6,13 +6,13 @@ var connect = require('../utils/sqlConnect');
 router.get('/', function(req, res, next) {
 
   //
-  connect.query(`SELECT name, avatar FROM  hero`, (err, result) =>{
+  connect.query(`SELECT name, avatar FROM  FavouriteThings`, (err, result) =>{
     if (err) {
       throw err;
       console.log(err);
     }else{
       console.log(result);
-      res.render('index', { avatars: result });
+      res.render('index', {title: 'Three Favourite Things', avatars: result });
     }
   });
 
@@ -21,7 +21,7 @@ router.get('/', function(req, res, next) {
 router.get('/:hero', function(req, res, next) {
 
   //
-  connect.query(`SELECT * FROM hero WHERE name="${req.params.hero}"`, (err, result) =>{
+  connect.query(`SELECT * FROM FavouriteThings WHERE name="${req.params.hero}"`, (err, result) =>{
     if (err) {
       throw err;
       console.log(err);
